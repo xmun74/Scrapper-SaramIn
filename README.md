@@ -1,5 +1,10 @@
 # Scrapper-SaramIn 사람인 스크래퍼
 
+## Features
+- [x] Job Scrapper
+- [x] search
+- [x] export csv
+
 
 ### 결과물     
 -------------  
