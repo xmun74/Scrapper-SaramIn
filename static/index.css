@@ -1,0 +1,57 @@
+input::placeholder,
+button{
+  font-family: 'Raleway', sans-serif;
+  color:rgba(0, 0, 0, 0.4);
+}
+input, button{
+  outline: none;
+  border:none;
+  background-color: transparent;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+header h1>a{
+  font-size:80px;
+}
+
+input{
+  padding:10px;
+  border-radius:15px;
+  width:100%;
+  font-size:16px;
+}
+
+form button{
+  cursor:pointer;
+  padding:0px 10px;
+  font-size:15px;
+  border-radius: 17px;
+  color:rgb(68, 133, 207);
+}
+form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width:500px;
+  height:44px;
+  border-radius:15px;
+  border:1px solid #dfe1e5;
+}
+
+form:hover {
+  border:1px solid rgba(223, 225, 229, 0);
+  box-shadow: 0 1px 6px rgba(32 33 36 / 28%);
+}

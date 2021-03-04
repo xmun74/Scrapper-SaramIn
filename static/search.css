@@ -1,0 +1,93 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin:0;
+  padding:0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* nav */
+nav .home {
+  display:block;
+  position: sticky;
+  top:0;
+  padding:20px;
+  background-color:white;
+  border-bottom:1.5px solid #dfe1e5;
+}
+nav .home a {
+  font-size:16px;
+  font-weight: 600;
+}
+/* header */
+header{
+  display: flex;
+  flex-direction: column;
+  margin:30px;
+}
+.title {
+  text-align:center;
+  font-size:42px;
+}
+.results {
+  text-align:right;
+}
+.saveBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.saveBtn a {
+  color:white;
+  background-color:rgb(90, 155, 207);
+  padding:10px;
+  margin-bottom:30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* section */
+section {
+  display:grid;
+  gap:20px;
+  grid-template-columns: 2fr 0.5fr 0.3fr;
+  margin:30px;
+}
+
+section h4 {
+  text-align: center;
+  font-size:18px;
+}
+.jobs-column span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.jobs-column span:first-child {
+  font-size:20px;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+section .job-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding:8px;
+  color: rgb(255, 94, 0);
+  background-color: wheat;
+  border-radius: 10px;
+}
+section a:hover {
+  background-color: rgb(241, 116, 43);
+  color:wheat;
+}

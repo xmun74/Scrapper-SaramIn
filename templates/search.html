@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='search.css')}}"/>
+</head>
+<body>
+  <nav>
+    <div class="home"><a href="/">Good Job</a></div>
+  </nav>
+  <header class="job-results">
+    <h1 class="title">search results</h1>
+    <h3 class="results">total : {{resultNum}} | results for : {{searchBy}}</h3>
+    <div class="saveBtn"><a href="/save?word={{searchBy}}">Save CSV</a></div>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  </header>
+  <section>
+    <h4>Title</h4>
+    <h4>Company</h4>
+    <h4>Link</h4>
+    {% for lists in jobs %}
+      <div class="jobs-column">
+        <span>{{lists.title}}</span>
+        <span>{{lists.job_condition}}</span>
+      </div>
+      <span class="job-company">{{lists.company}}</span>
+      <a href="{{lists.apply_link}}" target="_blank">APPLY</a>
+    {% endfor %}
+  </section>
+</body>
+</html>
